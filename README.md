@@ -1,49 +1,62 @@
 About Project
 
 This is a Flutter-based Jokes App developed as a semester project.
-The app works completely offline using Hive local database and provides jokes in different categories.
+The app provides jokes in different categories and allows users to interact with jokes.
+It works offline for favorite jokes using Hive, and all other jokes are now stored in Firebase Firestore.
 
 Features
 
-View jokes in different categories (Tech, Funny, General)
+View Jokes in Different Categories – Tech, Funny, General
 
-Search jokes
+Search Jokes – Search jokes by text
 
-Add new jokes
+Add New Jokes – Users can add their own jokes
 
-Edit jokes
+Edit Jokes – Update existing jokes
 
-Delete jokes
+Delete Jokes – Remove jokes from the list
 
-Random joke generator
+Random Joke Generator – Show a random joke
 
-Save favorite jokes
+Save Favorite Jokes – Mark jokes as favorite (stored locally using Hive)
 
-About App page
+About App Page – Shows app info, developer, tools used
 
-Offline support
-
+Offline Support – Favorite jokes accessible offline
 
 Technologies Used
 
-Flutter
+Flutter – Frontend
 
-Dart
+Dart – Programming language
 
-Hive Database
+Firebase Firestore – Store jokes online
 
-VS Code
+Hive Database – Store favorite jokes offline
 
-GitHub
+VS Code – Development IDE
 
+GitHub – Version control
 
 Database
 
+Firebase Firestore
+
+Collection: jokes → Stores all jokes
+
+Each document contains:
+
+text → Joke text
+
+category → Tech / Funny / General
+
+createdAt → Timestamp
+
 Hive NoSQL Database
 
-jokesBox → store all jokes
+Box: favoritesBox → Stores favorite jokes locally
 
-favoritesBox → store favorite jokes
+Data format: { "text": "...", "category": "..." }
 
 Developer
 Hira Siddique
